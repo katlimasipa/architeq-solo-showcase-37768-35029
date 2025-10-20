@@ -56,7 +56,7 @@ const About = () => {
             </p>
             <p className="text-secondary">
               I specialize in <span className="text-foreground font-medium">Framer</span>, 
-              {" "}<span className="text-foreground font-medium">Lovable.dev</span>, 
+              
               {" "}<span className="text-foreground font-medium">Figma</span>, and 
               {" "}<span className="text-foreground font-medium">UX Pilot</span> — 
               combining speed with stunning design to deliver results that look 

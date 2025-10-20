@@ -10,7 +10,7 @@ const services = [
   {
     number: "02",
     title: "MVP & SaaS Development",
-    tool: "Lovable.dev",
+    tool: "",
     description: "Launch your idea in 4–6 weeks with no-code power. From prototype to production.",
   },
   {
