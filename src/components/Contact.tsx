@@ -211,11 +211,7 @@ const Contact = () => {
               <div className="relative">
                 <label 
                   htmlFor="service"
-                  className={`absolute left-0 transition-all duration-300 text-sm md:text-base lg:text-lg ${
-                    focusedField === "service" || formData.service
-                      ? "-top-5 md:-top-6 text-xs md:text-sm text-secondary"
-                      : "top-3 md:top-4 text-secondary"
-                  }`}
+                  className="block mb-2 text-sm md:text-base lg:text-lg font-medium text-foreground"
                 >
                   What service are you interested in?
                 </label>
@@ -226,9 +222,11 @@ const Contact = () => {
                   onChange={handleChange}
                   onFocus={() => setFocusedField("service")}
                   onBlur={() => setFocusedField(null)}
-                  className="w-full pt-3 md:pt-4 pb-3 md:pb-4 bg-transparent border-b-2 border-black/20 focus:border-black outline-none text-base md:text-lg lg:text-xl transition-all duration-300 cursor-pointer"
+                  className="w-full pt-3 md:pt-4 pb-3 md:pb-4 bg-transparent border-b-2 border-black/40 focus:border-black outline-none text-base md:text-lg lg:text-xl transition-all duration-300 cursor-pointer text-foreground"
                 >
-                  <option value="" disabled></option>
+                  <option value="" disabled>
+                    Select a service
+                  </option>
                   <option value="Get a quote">Get a quote</option>
                   <option value="Web design services">Web design services</option>
                   <option value="Website maintenance">Website maintenance</option>
