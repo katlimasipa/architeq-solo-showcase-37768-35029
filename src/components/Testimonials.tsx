@@ -69,7 +69,7 @@ const Testimonials = () => {
               className="testimonial-item border-l-2 border-black pl-12 py-8 opacity-0 translate-x-20 transition-all duration-700"
             >
               <div className="max-w-4xl space-y-8">
-                <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed font-medium">
+                <p className="text-lg md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed font-medium">
                   "{testimonial.quote}"
                 </p>
                 <div className="space-y-2 pt-4">
