@@ -168,7 +168,7 @@ const Index = () => {
       {/* DESKTOP LAYOUT (split panel) */}
       <div className="hidden lg:flex h-screen">
         {/* LEFT PANEL - Fixed */}
-        <div className="w-[42%] xl:w-[38%] h-screen fixed top-0 left-0 flex flex-col justify-between p-10 xl:p-14 overflow-y-auto">
+        <div className="w-[42%] xl:w-[38%] h-screen fixed top-0 left-0 flex flex-col justify-between p-10 xl:p-14 overflow-y-auto border-r border-border">
           {/* Top section */}
           <div className="space-y-10">
             {/* Name + Available */}
