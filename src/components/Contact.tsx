@@ -231,7 +231,6 @@ const Contact = () => {
                   <option value="Web design services">Web design services</option>
                   <option value="Website maintenance">Website maintenance</option>
                   <option value="Website redesign">Website redesign</option>
-                  <option value="MVP">MVP</option>
                   <option value="Google Business Profile">Google Business Profile</option>
                 </select>
               </div>
