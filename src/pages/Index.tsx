@@ -168,7 +168,7 @@ const Index = () => {
       {/* DESKTOP LAYOUT (split panel) */}
       <div className="hidden lg:flex h-screen">
         {/* LEFT PANEL - Fixed */}
-        <div className="w-[42%] xl:w-[38%] h-screen fixed top-0 left-0 flex flex-col justify-between p-10 xl:p-14 overflow-y-auto border-r border-border">
+        <div className="w-[42%] xl:w-[38%] h-screen fixed top-0 left-0 flex flex-col justify-between p-10 xl:p-14 overflow-hidden">
           {/* Top section */}
           <div className="space-y-10">
             {/* Name + Available */}
@@ -211,49 +211,20 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Bottom section - Skills + Footer */}
-          <div className="space-y-8 mt-10">
-            <div className="space-y-3">
-              <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                What I'm best at
-              </p>
-              <div className="grid grid-cols-2 gap-2">
-                {skills.map((skill) => (
-                  <div
-                    key={skill}
-                    className="px-3 py-2.5 border border-border text-sm rounded-lg"
-                  >
-                    {skill}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Mini footer */}
-            <div className="flex items-center justify-between pt-4 border-t border-border">
-              <p className="text-xs text-muted-foreground">
-                © {currentYear} Architeq Web Agency
-              </p>
-              <div className="flex gap-3">
-                <a
-                  href="https://wa.me/27694900189"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground hover:opacity-70 transition-opacity"
-                  aria-label="WhatsApp"
+          {/* Bottom section - Skills */}
+          <div className="space-y-3 mt-10">
+            <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+              What I'm best at
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              {skills.map((skill) => (
+                <div
+                  key={skill}
+                  className="px-3 py-2.5 border border-border text-sm rounded-lg"
                 >
-                  <MessageCircle className="w-4 h-4" />
-                </a>
-                <a
-                  href="https://www.instagram.com/architeqwebagency/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground hover:opacity-70 transition-opacity"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-4 h-4" />
-                </a>
-              </div>
+                  {skill}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -284,6 +255,35 @@ const Index = () => {
 
           {/* Contact section */}
           <Contact />
+
+          {/* Footer */}
+          <footer className="py-6 px-8 xl:px-12 border-t border-border">
+            <div className="flex items-center justify-between">
+              <p className="text-xs text-muted-foreground">
+                © {currentYear} Architeq Web Agency
+              </p>
+              <div className="flex gap-3">
+                <a
+                  href="https://wa.me/27694900189"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:opacity-70 transition-opacity"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/architeqwebagency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:opacity-70 transition-opacity"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
