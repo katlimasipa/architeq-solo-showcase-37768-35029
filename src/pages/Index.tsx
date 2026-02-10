@@ -255,7 +255,35 @@ const Index = () => {
 
           {/* Contact section */}
           <Contact />
-        </div>
+
+          {/* Footer */}
+          <footer className="py-6 px-8 xl:px-12 border-t border-border">
+            <div className="flex items-center justify-between">
+              <p className="text-xs text-muted-foreground">
+                © {currentYear} Architeq Web Agency
+              </p>
+              <div className="flex gap-3">
+                <a
+                  href="https://wa.me/27694900189"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:opacity-70 transition-opacity"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/architeqwebagency/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:opacity-70 transition-opacity"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </footer>
       </div>
     </div>
   );
