@@ -50,7 +50,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       {/* MOBILE LAYOUT (stacked) */}
       <div className="lg:hidden">
         {/* Header / Info */}
