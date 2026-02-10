@@ -230,7 +230,7 @@ const Index = () => {
         </div>
 
         {/* RIGHT PANEL - Scrollable */}
-        <div className="w-[58%] xl:w-[62%] ml-[42%] xl:ml-[38%] overflow-y-auto">
+        <div className="w-[58%] xl:w-[62%] ml-[42%] xl:ml-[38%] overflow-y-auto overflow-x-hidden">
           {/* Projects */}
           <div className="p-8 xl:p-12 space-y-10">
             {projects.map((project) => (
