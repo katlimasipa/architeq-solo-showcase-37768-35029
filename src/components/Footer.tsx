@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left space-y-3">
             <p className="text-secondary">
-              © 2025 Architeq Web Agency
+              © {new Date().getFullYear()} Architeq Web Agency
             </p>
             <a 
               href="mailto:architeqwebagency@gmail.com"
